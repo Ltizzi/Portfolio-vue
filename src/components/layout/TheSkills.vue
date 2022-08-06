@@ -5,10 +5,15 @@
     <div class="stars3" id="stars3"></div>
     <div class="stars4"></div>
     <div class="stars5"></div>
+    <skills-list class="skills-list"></skills-list>
   </section>
 </template>
 <script>
+  import SkillsList from "../skills/SkillsList.vue";
   export default {
+    components: {
+      SkillsList,
+    },
     data() {
       return {
         paletas: [
@@ -84,7 +89,11 @@
     },
   };
 </script>
-<style scoped>
+<style>
+  /* .skills-list {
+    transform-origin: 50%;
+    transform: perspective(300px) rotateX(20deg);
+  } */
   .skills__back {
     height: 100vh;
     overflow: hidden;

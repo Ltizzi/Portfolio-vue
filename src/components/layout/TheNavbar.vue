@@ -14,16 +14,6 @@
     </div>
     <nav class="menu__nav">
       <ul class="menu__ul">
-        <!-- <li class="menu__item scale">
-          <a
-            href="#about"
-            class="menu__link"
-            style="color: #bd93f9"
-            title="Acerca de mí"
-            >ltizzi</a
-          >
-        </li>
-        <p class="punto">.get<span style="color: #8be9fd">(</span></p> -->
         <li class="menu__items scale" v-for="item in menuItems" :key="item">
           <a
             class="menu__link"

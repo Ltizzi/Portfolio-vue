@@ -1,12 +1,21 @@
 <template>
   <the-navbar></the-navbar>
+  <the-header></the-header>
+  <the-skills></the-skills>
 </template>
 
 <script>
   import TheNavbar from "./components/layout/TheNavbar.vue";
+  import TheHeader from "./components/layout/TheHeader.vue";
+  import TheSkills from "./components/layout/TheSkills.vue";
+
   export default {
     name: "App",
-    components: { TheNavbar },
+    components: {
+      TheNavbar,
+      TheHeader,
+      TheSkills,
+    },
   };
 </script>
 

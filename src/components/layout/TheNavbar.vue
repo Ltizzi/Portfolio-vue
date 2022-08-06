@@ -14,7 +14,7 @@
     </div>
     <nav class="menu__nav">
       <ul class="menu__ul">
-        <li class="menu__item scale">
+        <!-- <li class="menu__item scale">
           <a
             href="#about"
             class="menu__link"
@@ -23,54 +23,22 @@
             >ltizzi</a
           >
         </li>
-        <p class="punto">.get<span style="color: #8be9fd">(</span></p>
-        <li class="menu__item scale">
+        <p class="punto">.get<span style="color: #8be9fd">(</span></p> -->
+        <li class="menu__items scale" v-for="item in menuItems" :key="item">
           <a
-            href="#skills"
             class="menu__link"
-            style="color: #f1fa8c"
-            title="ver habilidades"
-            >Skills<span class="punto">,</span></a
+            :href="item.link"
+            :title="item.title"
+            :style="item.style"
+            >{{ item.text }}</a
           >
-        </li>
-        <li class="menu__item scale">
-          <a
-            href="#hobbies"
-            class="menu__link"
-            style="color: #50fa7b"
-            title="ver hobbies"
-            >Hobbies</a
-          >
-        </li>
 
-        <p class="punto"><span style="color: #8be9fd">)</span>.</p>
-        <li class="menu__item scale">
-          <a
-            href="#formacion"
-            class="menu__link"
-            style="color: #8be9fd"
-            title="ver formación"
-            >getFormación()</a
-          >
-        </li>
-        <p class="punto">.</p>
-        <li class="menu__item scale">
-          <a
-            href="#proyectos"
-            class="menu__link"
-            style="color: #ff79c6"
-            title=""
-            >getProyectos()</a
-          >
-        </li>
-        <p class="punto">.</p>
-        <li class="menu__item scale">
-          <a
-            href="#contacto"
-            class="menu__link"
-            style="color: #ffb86c"
-            title="mandar mensaje"
-            >Contacto() <span class="punto">;</span></a
+          <span
+            :class="punt.class"
+            v-for="punt in item.puntuacion"
+            :key="punt"
+            :style="punt.style"
+            >{{ punt.tipo }}</span
           >
         </li>
       </ul>
@@ -87,12 +55,13 @@
             style: "color: #bd93f9",
             link: "#about",
             title: "Acerca de mí",
-            puntuación: [
+            puntuacion: [
               {
                 tipo: ".get",
                 style: "color: #fff",
+                class: "punto",
               },
-              { tipo: "(", style: "color: #8be9fd" },
+              { tipo: "(", style: "color: #8be9fd", class: "punto" },
             ],
           },
           {
@@ -100,16 +69,16 @@
             style: "color: #f1fa8c",
             link: "#skills",
             title: "ver habilidades",
-            puntuación: [{ tipo: ",", style: "color:  #fff" }],
+            puntuacion: [{ tipo: ",", style: "color:  #fff", class: "punto" }],
           },
           {
             text: "Hobbies",
             style: "color: #50fa7b",
             link: "#hobbies",
             title: "ver hobbies",
-            puntuación: [
-              { tipo: ")", style: "color: #8be9fd" },
-              { tipo: ".", style: "color: #fff" },
+            puntuacion: [
+              { tipo: ")", style: "color: #8be9fd", class: "punto" },
+              { tipo: ".", style: "color: #fff", class: "punto" },
             ],
           },
           {
@@ -117,21 +86,21 @@
             style: "color: #8be9fd",
             link: "#formacion",
             title: "ver formación",
-            puntuación: [{ tipo: ".", style: "color:  #fff" }],
+            puntuacion: [{ tipo: ".", style: "color:  #fff", class: "punto" }],
           },
           {
             text: "getProyectos()",
             style: "color: #ff79c6",
             link: "#proyectos",
             title: "ver proyectos",
-            puntuación: [{ tipo: ".", style: "color:  #fff" }],
+            puntuacion: [{ tipo: ".", style: "color:  #fff", class: "punto" }],
           },
           {
             text: "Contacto()",
             style: "color: #ffb86c",
             link: "#contacto",
             title: "mandar mensaje",
-            puntuación: [{ tipo: ";", style: "color:#fff" }],
+            puntuacion: [{ tipo: ";", style: "color:#fff", class: "punto" }],
           },
         ],
       };
@@ -155,6 +124,7 @@
     height: 2.5rem;
     position: fixed;
     z-index: 10;
+    padding: 0.7rem 0;
   }
 
   .menu__header {
@@ -190,7 +160,6 @@
     color: #f8f8f2;
     font-weight: 700;
     font-family: "droid-sans-mono", monospace;
-    margin: 0;
   }
 
   .menu__link {

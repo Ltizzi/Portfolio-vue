@@ -50,7 +50,7 @@
           },
           {
             title: "Descargar CV",
-            link: "../../assets/CV Terlizzi Leonardo.pdf",
+            link: "",
             icon: "fas fa-file-pdf about__redes-icon",
           },
         ],

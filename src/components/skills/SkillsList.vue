@@ -14,8 +14,8 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            width="32"
-            height="32"
+            width="40"
+            height="40"
             viewBox="0 0 50 50"
             style="fill: #8be9fd"
             class="skills__icon"
@@ -30,7 +30,7 @@
     </ul>
     <h3 class="skills__soft-title">Soft Skills</h3>
     <ul class="skills__soft">
-      <li class="skills__item" v-for="skill in softSkills" :key="skill">
+      <li class="skills__item-soft" v-for="skill in softSkills" :key="skill">
         <base-skill-card
           :icon="skill.icon"
           :skillName="skill.name"
@@ -40,7 +40,7 @@
     <span id="hobbies"></span>
     <h3 class="hobbies__main-tittle">Hobbies</h3>
     <ul class="skills__hobbies">
-      <li class="skills__item" v-for="hobbie in hobbies" :key="hobbie">
+      <li class="skills__item-hobbie" v-for="hobbie in hobbies" :key="hobbie">
         <base-skill-card
           :icon="hobbie.icon"
           :skillName="hobbie.name"
@@ -99,20 +99,22 @@
 <style scoped>
   .skills {
     padding: 2rem 3rem;
+    padding-top: 0;
     /* background-color: #f7f5e9; */
     /* background: #f8f8f2;
     animation: animStar 40s linear 6s;*/
 
-    animation: starwars 15s linear infinite;
+    animation: starwars 28s linear infinite;
   }
   .skills__hard-title,
   .skills__soft-title,
   .hobbies__main-tittle {
     color: #f1fa8c;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 2rem;
+    font-size: 7rem;
     text-align: center;
     margin: 1rem auto;
+    padding-bottom: 2rem;
   }
 
   .skills__hard {
@@ -122,6 +124,31 @@
     justify-content: space-evenly;
     padding: 0 2rem;
     list-style: none;
+    padding-bottom: 3rem;
+  }
+
+  .skills__soft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem 2rem;
+    list-style: none;
+    padding-bottom: 10rem;
+    width: 105%;
+    margin-left: -2rem;
+  }
+
+  .skills__hobbies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5rem 2rem;
+    list-style: none;
+    padding-bottom: 130rem;
+    width: 110%;
+    margin-left: -3rem;
   }
 
   .skills__item {
@@ -139,10 +166,43 @@
     transition: 0.3s;
   }
 
+  .skills__item-soft {
+    width: 260px;
+    height: 175px;
+    text-align: left;
+    border: 4px groove #bd93f9;
+
+    border-radius: 10px;
+    /* padding-top: 4rem;
+    padding-left: 1rem; */
+
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    transform: scale(1.3);
+  }
+
+  .skills__item-hobbie {
+    width: 260px;
+    height: 175px;
+    text-align: left;
+    border: 4px groove #bd93f9;
+
+    border-radius: 10px;
+    /* padding-top: 4rem;
+    padding-left: 1rem; */
+
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    transform: scale(1.3);
+  }
+
   .typescript {
-    padding: 0;
-    margin: -1rem 0;
-    font-size: 1.5rem;
+    padding: 3rem 1rem;
+    margin: -2.5rem 0;
+    height: 35rem;
+    width: 35rem;
   }
 
   /* .skills__item:hover {
@@ -151,57 +211,38 @@
 
   .skills__icon {
     color: #8be9fd;
-    font-size: 2.2rem;
-    margin-top: 7rem;
+    font-size: 3rem;
+    margin-top: 4rem;
     margin-left: 1rem;
   }
 
   .skills__title {
     color: #f1fa8c;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1rem;
-    padding-top: 0.2rem;
+    font-size: 1.5rem;
+
     margin-left: 1rem;
-  }
-
-  .skills__soft {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0.5rem 2rem;
-    list-style: none;
-  }
-
-  .skills__hobbies {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0.5rem 2rem;
-    list-style: none;
-    padding-bottom: 70rem;
   }
 
   @keyframes starwars {
     /*translateY(0px)*/
 
     0% {
-      transform: translateY(1000px) scale(2.7) perspective(450px) rotateX(25deg);
+      transform: translateY(1400px) scale(3.6) perspective(500px) rotateX(25deg);
       transform-origin: 50%;
-      top: 75%;
+      top: 65%;
     }
 
     /*translateY(-1000px)*/
-    90% {
+    80% {
       opacity: 0.8;
-      transform: scale(0.4) translateY(-2000px) perspective(400px)
+      transform: scale(0.7) translateY(-2000px) perspective(800px)
         rotateX(25deg);
       top: -20%;
     }
-    91% {
+    90% {
       opacity: 0;
-      transform: scale(0.0001) translateY(-8000px) perspective(400px);
+      transform: scale(0.01) translateY(-6000px) perspective(450px);
     }
     100% {
       opacity: 0;

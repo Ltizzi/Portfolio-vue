@@ -1,12 +1,14 @@
 <template lang="">
-  <section class="skills__back">
-    <div class="stars" id="stars"></div>
-    <div class="stars2" id="stars2"></div>
-    <div class="stars3" id="stars3"></div>
-    <div class="stars4"></div>
-    <div class="stars5"></div>
-    <skills-list class="skills-list"></skills-list>
-  </section>
+  <transition>
+    <section class="skills__back">
+      <div class="stars" id="stars"></div>
+      <div class="stars2" id="stars2"></div>
+      <div class="stars3" id="stars3"></div>
+      <div class="stars4"></div>
+      <div class="stars5"></div>
+      <skills-list class="skills-list"></skills-list>
+    </section>
+  </transition>
 </template>
 <script>
   import SkillsList from "../skills/SkillsList.vue";
@@ -72,7 +74,7 @@
           "; --stars2: " +
           String(this.generarEstrellas(10900, this.paletas[1])) +
           "; --stars3: " +
-          String(this.generarEstrellas(30, this.paletas[1])) +
+          String(this.generarEstrellas(70, this.paletas[1])) +
           " ;--stars4: " +
           String(this.generarEstrellas(4000, this.paletas[1])) +
           "; --stars5: " +
@@ -105,7 +107,7 @@
     height: 1px;
     background: transparent;
     transition: 1.5s;
-    animation: animStar 200s linear infinite;
+    animation: animStar 300s linear infinite;
     box-shadow: var(--stars1);
   }
 
@@ -145,7 +147,7 @@
     width: 3px;
     height: 3px;
     background: transparent;
-    animation: animStar 300s linear infinite;
+    animation: animStar 200s linear infinite;
     box-shadow: var(--stars3);
   }
 
@@ -163,7 +165,7 @@
     width: 1px;
     height: 1px;
     background: transparent;
-    animation: animStar 150s linear infinite;
+    animation: animStar 275s linear infinite;
     box-shadow: var(--stars4);
   }
 
@@ -181,7 +183,7 @@
     width: 4px;
     height: 4px;
     background: transparent;
-    animation: animStar 500s linear infinite;
+    animation: animStar 175s linear infinite;
     box-shadow: var(--stars5);
   }
 

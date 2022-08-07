@@ -104,7 +104,7 @@
     /* background: #f8f8f2;
     animation: animStar 40s linear 6s;*/
 
-    animation: starwars 28s linear infinite;
+    animation: starwars 28s linear infinite forwards;
   }
   .skills__hard-title,
   .skills__soft-title,

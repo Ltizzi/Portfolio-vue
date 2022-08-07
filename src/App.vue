@@ -2,7 +2,10 @@
   <the-navbar></the-navbar>
   <the-header></the-header>
   <the-skills></the-skills>
+  <the-edu></the-edu>
+  <base-separador></base-separador>
   <the-Projects></the-Projects>
+  <the-footer></the-footer>
 </template>
 
 <script>
@@ -10,6 +13,8 @@
   import TheHeader from "./components/layout/TheHeader.vue";
   import TheSkills from "./components/layout/TheSkills.vue";
   import TheProjects from "./components/layout/TheProjects.vue";
+  import TheEdu from "./components/layout/TheEdu.vue";
+  import TheFooter from "./components/layout/TheFooter.vue";
 
   export default {
     name: "App",
@@ -18,6 +23,8 @@
       TheHeader,
       TheSkills,
       TheProjects,
+      TheEdu,
+      TheFooter,
     },
   };
 </script>

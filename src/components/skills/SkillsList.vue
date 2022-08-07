@@ -136,7 +136,7 @@
     list-style: none;
     padding-bottom: 10rem;
     width: 105%;
-    margin-left: -2rem;
+    margin-left: -2.5rem;
   }
 
   .skills__hobbies {
@@ -148,7 +148,7 @@
     list-style: none;
     padding-bottom: 130rem;
     width: 110%;
-    margin-left: -3rem;
+    margin-left: -5rem;
   }
 
   .skills__item {

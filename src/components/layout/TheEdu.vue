@@ -21,12 +21,24 @@
   }
 
   .proyectos__title {
-    color: #6272a4;
-    text-shadow: 1px 5px 6px #505c7d;
+    color: transparent;
+    background: linear-gradient(
+      160deg,
+      #ffb86c,
+      #ff79c6,
+      #bd93f9,
+      #8be9fd,
+      #50fa7b
+    );
+    /*text-shadow: 1px 5px 6px #505c7d;*/
     font-family: "M PLUS Rounded 1c", sans-serif;
-    font-size: 3rem;
-    font-weight: bolder;
-
+    font-size: 5rem;
+    font-weight: 900;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
+    white-space: pre-wrap;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 </style>

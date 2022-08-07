@@ -23,7 +23,10 @@
         ></a>
       </li>
     </ul>
-    <p class="footer__text">Desarrollado por Leonardo Terlizzi 2022</p>
+    <p class="footer__text">
+      Desarrollado por Leonardo Terlizzi 2022, Powered by
+      <i class="fa-brands fa-vuejs vue-icon"></i>
+    </p>
   </footer>
 </template>
 <script>
@@ -81,5 +84,14 @@
     font-weight: 700;
     font-size: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .vue-icon {
+    font-size: 2rem;
+    margin: 0 0.2rem;
+    color: #42b883;
+    background: #35495e;
+    padding: 0.7rem;
+    border-radius: 30px;
   }
 </style>

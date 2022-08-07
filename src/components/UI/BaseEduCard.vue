@@ -9,12 +9,22 @@
         <ul class="proyecto__submenu">
           <li class="proyecto__item"></li>
           <li class="proyecto__item-btn big">
-            <a :href="link1" class="proyecto__link" :title="anchorTitle"
+            <a
+              :href="link1"
+              class="proyecto__link"
+              :title="anchorTitle"
+              target="_blank"
+              rel="noopener noreferrer"
               >Temario
             </a>
           </li>
           <li class="proyecto__item-btn big">
-            <a :href="link2" class="proyecto__link" :title="anchorTitle"
+            <a
+              :href="link2"
+              class="proyecto__link"
+              :title="anchorTitle"
+              target="_blank"
+              rel="noopener noreferrer"
               >Website</a
             >
           </li>
@@ -97,7 +107,8 @@
 
   .proyecto__item-btn {
     padding: 1rem;
-    background: #bd93f9;
+    /*  background: #bd93f9;*/
+    background: linear-gradient(90deg, #bd93f9, #8be9fd);
     width: 20rem;
     margin: 0.5rem 1rem;
     text-align: center;
@@ -113,10 +124,12 @@
     margin: auto 0;
     padding: 0 2rem;
     color: #f8f8f2;
+    text-shadow: 2px 2px 3px#67606d, -2px -2px 3px#67606d, -2px 2px 3px #67606d,
+      2px -2px 3px #67606d;
     font-size: 1.5rem;
     text-decoration: none;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
   }
 
   @media screen and (max-width: 768px) {

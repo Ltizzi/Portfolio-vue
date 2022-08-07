@@ -5,7 +5,13 @@
       <p class="about__header-bajada animLeft2">{{ about.bajada }}</p>
       <ul class="about__redes animLeft3">
         <li class="about__redes-item scale" v-for="red in redes" :key="red">
-          <a :href="red.link" :title="red.title" class="about__redes-link">
+          <a
+            :href="red.link"
+            :title="red.title"
+            class="about__redes-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i :class="red.icon"></i
           ></a>
         </li>

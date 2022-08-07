@@ -1,12 +1,16 @@
 <template lang="">
   <section class="contacto" id="contacto">
     <div class="contacto__errores" id="errores"></div>
-    <img
+    <!-- <img
       src="../../assets/contacto.jpeg"
       alt="Imagen de un teléfono"
       class="contacto__img"
       id="fotoTel"
-    />
+    /> -->
+
+    <video autoplay loop class="container-fluid contacto__img">
+      <source src="../../assets/teclado.mp4" type="video/mp4" />
+    </video>
 
     <div class="contacto__form-container">
       <h6 class="contacto__title">
@@ -91,9 +95,7 @@
   }
 
   .contacto__img {
-    width: 50%;
-    height: 30rem;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   .contacto__form-container {

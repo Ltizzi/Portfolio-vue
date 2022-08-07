@@ -32,6 +32,7 @@
 <style>
   body {
     margin: 0;
+    caret-color: transparent;
   }
 
   .animLeft {

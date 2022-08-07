@@ -19,19 +19,19 @@
 
     background: radial-gradient(
       ellipse at bottom,
-      #e2e2f8 1%,
-      #a7a7d4 50%,
-      #8888bd 100%
+      #f7f7fa 1%,
+      #e2e2f8 50%,
+      #a7a7d4 100%
     );
   }
 
   .protect__main-title {
-    color: #282a36;
-    text-shadow: 2px 5px 5px #888984;
+    color: #f8f9e9;
+    text-shadow: 10px 10px 20px #5e5f5c;
     /* text-shadow: -1px 0 #f8f8f2, 0 1px #f8f8f2, 1px 0 #f8f8f2, 0 -1px #f8f8f2; */
     font-family: "droid-sans-mono", monospace;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
   }
 

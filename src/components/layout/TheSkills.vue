@@ -136,7 +136,7 @@
   .stars2:after {
     content: "";
     position: absolute;
-    top: 2000px;
+    top: 2200px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -154,7 +154,7 @@
   .stars3:after {
     content: "";
     position: absolute;
-    top: 2000px;
+    top: 2200px;
     width: 3px;
     height: 3px;
     background: transparent;

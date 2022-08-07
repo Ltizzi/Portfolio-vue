@@ -32,25 +32,43 @@
             about:
               "Portfolio web con implementación CRUD y autenticación con JWT. Proyecto integrador de Argentina Programa",
             techs: [
-              "fa-brands fa-angular",
-              "fa-solid fa-leaf skills__icon",
-              "fa-solid fa-database skills__icon",
-              "fa-brands fa-java skills__icon",
+              { icon: "fa-brands fa-angular angular-icon", text: "Angular" },
+              {
+                icon: "fa-solid fa-leaf skills__icon spring-icon",
+                text: "Spring",
+              },
+              {
+                icon: "fa-brands fa-java skills__icon java-icon",
+                text: "Java",
+              },
+              {
+                icon: "fa-solid fa-database skills__icon mysql-icon",
+                text: "MySQL",
+              },
             ],
           },
           {
             title: "E-Shop",
             foto: "2.png",
             fotoTxt: "Ver imagen",
-            github: "https://github.com/Ltizzi/e-shop-fron",
+            github: "https://github.com/Ltizzi/e-shop-front",
             demo: "https://e-shop-ltizzi.web.app/",
             about:
               "E-commerce con registro, autenticación, carrito, filtro de productos, registro de compras y manejo de stocks. ",
             techs: [
-              "fa-brands fa-angular",
-              "fa-solid fa-leaf skills__icon",
-              "fa-solid fa-database skills__icon",
-              "fa-brands fa-java skills__icon",
+              { icon: "fa-brands fa-angular angular-icon", text: "Angular" },
+              {
+                icon: "fa-solid fa-leaf skills__icon spring-icon",
+                text: "Spring",
+              },
+              {
+                icon: "fa-brands fa-java skills__icon java-icon",
+                text: "Java",
+              },
+              {
+                icon: "fa-solid fa-database skills__icon mysql-icon",
+                text: "MySQL",
+              },
             ],
           },
           {
@@ -62,9 +80,18 @@
             about:
               "Encriptador realizado para el primer Challenge de Alura Latam. Hecho con HTML, CSS y JavaScript plano",
             techs: [
-              "fa-brands fa-html5 skills__icon",
-              "fa-brands fa-css3-alt skills__icon",
-              "fa-brands fa-js skills__icon",
+              {
+                icon: "fa-brands fa-html5 skills__icon html-icon",
+                text: "HTML",
+              },
+              {
+                icon: "fa-brands fa-css3-alt skills__icon css-icon",
+                text: "CSS",
+              },
+              {
+                icon: "fa-brands fa-js skills__icon js-icon",
+                text: "JavaScript",
+              },
             ],
           },
           {
@@ -76,9 +103,18 @@
             about:
               "Simple juego de ahorcado realizado para el segundo desafío de Alura Latam. Uso de canvas y manipulación de dom dinámica",
             techs: [
-              "fa-brands fa-html5 skills__icon",
-              "fa-brands fa-css3-alt skills__icon",
-              "fa-brands fa-js skills__icon",
+              {
+                icon: "fa-brands fa-html5 skills__icon html-icon",
+                text: "HTML",
+              },
+              {
+                icon: "fa-brands fa-css3-alt skills__icon css-icon",
+                text: "CSS",
+              },
+              {
+                icon: "fa-brands fa-js skills__icon js-icon",
+                text: "JavaScript",
+              },
             ],
           },
           {
@@ -90,12 +126,30 @@
             about:
               "Página de e-commerce realizada para el tercer desafío de Alura Latam. Trabaja en conjunto con una simple API para darle funcionalidad CRUD",
             techs: [
-              "fa-brands fa-html5 skills__icon",
-              "fa-brands fa-css3-alt skills__icon",
-              "fa-brands fa-js skills__icon",
-              "fa-solid fa-leaf skills__icon",
-              "fa-solid fa-database skills__icon",
-              "fa-brands fa-java skills__icon",
+              {
+                icon: "fa-brands fa-html5 skills__icon html-icon",
+                text: "HTML",
+              },
+              {
+                icon: "fa-brands fa-css3-alt skills__icon css-icon",
+                text: "CSS",
+              },
+              {
+                icon: "fa-brands fa-js skills__icon js-icon",
+                text: "JavaScript",
+              },
+              {
+                icon: "fa-solid fa-leaf skills__icon spring-icon",
+                text: "Spring",
+              },
+              {
+                icon: "fa-brands fa-java skills__icon java-icon",
+                text: "Java",
+              },
+              {
+                icon: "fa-solid fa-database skills__icon mysql-icon",
+                text: "MySQL",
+              },
             ],
           },
         ],
@@ -114,18 +168,20 @@
 
   .proyect__item {
     border: 1px solid #f9dd79;
-    background: #685a49;
-    padding: 1rem 0.2rem;
-    width: 30rem;
-    height: 36rem;
+    background: #1f2212;
+    padding: 1rem 0.5rem;
+    padding-bottom: 4rem;
+    width: 25rem;
+    height: auto;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 0.5s;
-    margin: 2rem auto;
+    margin-bottom: 2.5rem;
+    margin-right: 3rem;
     border-radius: 20px;
-    box-shadow: 20px 20px 20px #4d4d4e;
+    box-shadow: 8px 12px 45px #363637;
   }
 
   /*  .proyect__item:hover {

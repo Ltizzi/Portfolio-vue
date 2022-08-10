@@ -24,13 +24,13 @@
       return {
         cursos: [
           {
-            title: "Portfolio Web",
+            title: "Portfolio",
             foto: "portfolio.png",
             fotoTxt: "Ver Imagen",
             github: "https://github.com/Ltizzi/Portfolio-frontend",
             demo: "https://ltizzi-portfolio.web.app/",
             about:
-              "Portfolio web con implementación CRUD y autenticación con JWT. Proyecto integrador de Argentina Programa",
+              "Fullstack web application. Proyecto integrador de Argentina Programa. CRUD, auntenticación con JWT. ",
             techs: [
               { icon: "fa-brands fa-angular angular-icon", text: "Angular" },
               {
@@ -124,7 +124,7 @@
             github: "https://github.com/Ltizzi/Alura-Challenge-E-commerce",
             demo: "https://ltizzi.github.io/Alura-Challenge-E-commerce/",
             about:
-              "Página de e-commerce realizada para el tercer desafío de Alura Latam. Trabaja en conjunto con una simple API para darle funcionalidad CRUD",
+              "Página de e-commerce realizada para el tercer desafío de Alura Latam.",
             techs: [
               {
                 icon: "fa-brands fa-html5 skills__icon html-icon",
@@ -167,12 +167,12 @@
   }
 
   .proyect__item {
-    border: 1px solid #f9dd79;
-    background: #1f2212;
+    /*  border: 1px solid #f9dd79;
+    background: #1f2212;*/
+    background: url("../../assets/svg/Nexus5.svg");
     padding: 1rem 0.5rem;
-    padding-bottom: 4rem;
-    width: 25rem;
-    height: auto;
+    padding-bottom: 2.5rem;
+    width: 15rem;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
@@ -180,8 +180,6 @@
     transition: 0.5s;
     margin-bottom: 2.5rem;
     margin-right: 3rem;
-    border-radius: 20px;
-    box-shadow: 8px 12px 45px #363637;
   }
 
   /*  .proyect__item:hover {

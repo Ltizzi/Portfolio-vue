@@ -18,16 +18,18 @@
           <i :class="tech.icon"></i>
         </li>
       </ul>
-      <button class="proyecto__btn">
-        <a :href="github" target="_blank" rel="noopener noreferrer"
-          ><i class="fa-brands fa-github proyecto__github-icon"></i
-        ></a>
-      </button>
-      <button class="proyecto__btn">
-        <a :href="demo" class="demo" target="_blank" rel="noopener noreferrer"
-          >Demo</a
-        >
-      </button>
+      <ul class="proyecto__buttons">
+        <button class="proyecto__btn">
+          <a :href="github" target="_blank" rel="noopener noreferrer"
+            ><i class="fa-brands fa-github proyecto__github-icon"></i
+          ></a>
+        </button>
+        <button class="proyecto__btn">
+          <a :href="demo" class="demo" target="_blank" rel="noopener noreferrer"
+            >Demo</a
+          >
+        </button>
+      </ul>
     </div>
   </slot>
 </template>
@@ -41,6 +43,8 @@
   .proyecto__inner {
     background: #fdffee;
     padding: 1rem 1rem;
+    padding-bottom: 1.5rem;
+    height: 26.5rem;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -57,8 +61,8 @@
   }
 
   .proyecto__icon {
-    width: 18rem;
-    height: 12rem;
+    width: 90%;
+    height: 10rem;
     margin: 0 auto;
     object-fit: fill;
     padding-bottom: 1rem;
@@ -69,7 +73,7 @@
   }
 
   .proyecto__title {
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 2rem;
     text-shadow: 1px 2px 2px gray;
     font-weight: 700;
@@ -82,9 +86,9 @@
     font-family: "M PLUS Rounded 1c", sans-serif;
     text-shadow: 1px 2px 2px gray;
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: #3e4048d3;
+    color: #5a6586;
     text-align: center;
     padding-bottom: 0.3rem;
   }
@@ -94,12 +98,12 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -1rem;
+    margin-left: -2rem;
     justify-content: space-evenly;
   }
 
   .proyecto__tech-item {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-right: 0.2rem;
     margin-bottom: 0.5rem;
     color: white;
@@ -108,17 +112,25 @@
     cursor: pointer;
   }
 
+  .proyecto__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -2rem;
+  }
+
   .proyecto__btn {
-    width: 100%;
+    width: 7rem;
     background: linear-gradient(160deg, #ffb86c, #ff79c6, #bd93f9);
-    padding: 1rem;
+    padding: 0.2rem;
     border-radius: 10px;
     border: none;
-    margin: 0.5rem 0;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
   }
 
   .proyecto__github-icon {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: white;
     text-align: center;
@@ -135,44 +147,44 @@
 
   .angular-icon {
     background: #a6120d;
-    padding: 0.5rem;
+    padding: 0.3rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }
   .spring-icon {
     background: #83c77b;
-    padding: 0.5rem;
+    padding: 0.3rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }
   .java-icon {
     background: #5382a1;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }
   .mysql-icon {
     background: #00758f;
-    padding: 0.5rem;
+    padding: 0.3rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }
   .html-icon {
     background: #e34c26;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }
   .css-icon {
     background: #264de4;
-    padding: 0.7rem 1rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }
   .js-icon {
     background: #f0db4f;
     color: #323330;
-    padding: 0.7rem;
+    padding: 0.3rem;
     border-radius: 30px;
     box-shadow: 5px 5px 10px #474844;
   }

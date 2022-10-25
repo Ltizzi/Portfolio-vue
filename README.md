@@ -1,24 +1,6 @@
 # portfolio-vue
 
-## Project setup
-```
-npm install
-```
+## Descripcion
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Es la migración de mi viejo portfolio hecho en html, css y js puros a un proyecto en Vue JS. Todavía no está terminado.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
